@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+    <nav>
+        <button>Dark</button>
+     </nav>
+     
+     <main class="main-content">
+         
+        <div class="main-header">
+            <h1 class="header-one">Generate a</h1>
+            <h1 class="header-two">random password</h1>
+        </div>
+        
+            <div class="input-item">
+                <label for="length">Number Of Characters</label>
+                <input type="number" min="8" max="20" name="Password Length" id="length" >
+            </div>
+            <div class="input-item">
+                <label for="special-check">Special Characters</label>
+                <input type="checkbox" name="Special Characters" id="special-check">
+            </div>
+            <div class="input-item">
+                <label for="number-check">Number</label>
+                <input type="checkbox" name="Number" id="number-check">
+            </div>
+
+        <button>Generate a Password</button>
+
+        <div class="result-container">
+            <p id="passwordOne" class="passwordText"></p>
+            <p id="passwordTwo" class="passwordText"></p>
+        </div>
+
+     </main>
+ 
+     
+     <footer>
+        <p>Copyright</p>
+     </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

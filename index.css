@@ -1,0 +1,182 @@
+:root {
+    --green: #65D2AC;
+    --blue: #29374A;
+    --lightgreen: #ECFDF5;
+    --gray: #546664;
+    --black: #1C1C1C;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+}
+
+/*~ Nav */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav button {
+    margin: .7rem .7rem 0 0;
+    padding: .5rem;
+    border: none;
+    border-radius: .7rem;
+    font-weight: bolder;
+    background-color: var(--blue);
+    color: var(--green);
+}
+
+/*~ Main */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    gap: 3rem;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--lightgreen);
+}
+
+.header-one {
+    color: var(--black);
+}
+
+.header-two {
+    color: var(--green);
+}
+
+.input-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17rem;
+    gap: .3rem;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    border: 2px solid var(--black);
+    background-color: var(--green);
+    color: var(--black);
+}
+
+main button {
+    border: 2px solid var(--black);
+    background-color: var(--green);
+    color: var(--black);
+    padding: .7rem .5rem;
+    border-radius: 6px;
+    font-size: 1.3rem;
+}
+
+main button:hover {
+    cursor: pointer;
+}
+
+.result-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.passwordText{
+    width: 15rem;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    background-color: var(--blue);
+}
+
+.passwordText:hover {
+    cursor: pointer;
+}
+
+/*~ Footer */
+
+footer {
+    color: var(--green);
+}
+
+/*^ Checkbox Style */
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--black);
+    border-radius: 4px;
+    background-color: var(--lightgreen);
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✔';
+    color: var(--black);
+    font-size: 1.5rem;
+    position: absolute;
+    top: -1px;
+    left: 4px;
+}
+
+/*^ Number Style */
+
+input[type="number"] {
+    width: 3rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    color: var(--black);
+    background-color: var(--lightgreen);
+    border: 2px solid var(--black);
+    border-radius: 4px;
+}
+
+/*? Dark Theme */
+
+.darkNavButton {
+    background-color: var(--green);
+    color: var(--blue);
+}
+
+.darkMainContent {
+    background-color: var(--blue);
+}
+
+.darkHeaderOne {
+    color: var(--lightgreen);
+}
+
+.darkInputItem {
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+.darkMainButton {
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+.darkResultContainerP {
+    background-color: var(--black);
+    color: var(--green);
+}
